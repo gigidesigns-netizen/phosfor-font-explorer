@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phosfor Font Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/opentype.js/1.3.4/opentype.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>Phosfor Font Explorer</h1>
+    <select id="fontSelect">
+      <option value="https://gigidesigns-netizen.github.io/phosfor-font-explorer/fonts/Phosfor-Aether5Pixel.otf">Aether 5 Pixel</option>
+      <option value="https://gigidesigns-netizen.github.io/phosfor-font-explorer/fonts/Phosfor-Aether6Medium.otf">Aether 6 Medium</option>
+      <option value="https://gigidesigns-netizen.github.io/phosfor-font-explorer/fonts/Phosfor-Aether7Bold.otf">Aether 7 Bold</option>
+    </select>
+    <label for="sizeRange">Size:</label>
+    <input type="range" id="sizeRange" min="20" max="200" value="72" />
+  </div>
+  <div class="container">
+    <div id="glyphGrid" class="grid"></div>
+    <div class="inspector">
+      <canvas id="glyphCanvas" width="300" height="300"></canvas>
+      <div id="glyphInfo">Click a glyph to inspect</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
