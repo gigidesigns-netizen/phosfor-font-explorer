@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #fafafa;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#styleSelector, #sizeSlider {
+  margin: 10px 0;
+}
+
+#glyphGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 40px);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.glyphBox {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+#glyphViewer {
+  position: fixed;
+  top: 100px;
+  right: 30px;
+  width: 320px;
+  background: white;
+  border-left: 2px solid #ddd;
+  padding: 10px;
+}
