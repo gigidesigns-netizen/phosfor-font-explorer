@@ -1,0 +1,42 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+}
+header {
+  background: #111;
+  color: white;
+  padding: 1rem;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1rem;
+}
+.controls {
+  flex: 1;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 40px);
+  gap: 8px;
+  flex: 2;
+}
+.grid span {
+  font-size: 36px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 4px;
+}
+.detail {
+  flex: 1;
+  text-align: center;
+}
+#glyphCanvas {
+  border: 1px solid #ccc;
+  background: white;
+}
